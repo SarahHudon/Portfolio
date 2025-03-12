@@ -112,14 +112,16 @@ nav a:hover {
         box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
     }
 }
-img {
-    width: 200px; /* Ajuste la taille selon tes besoins */
-    height: auto;
-    border-radius: 12px; /* Bords arrondis */
+.profile-pic {
+    width: 80px; /* Taille de l'image (ajuste si besoin) */
+    height: 80px;
+    object-fit: cover; /* Pour éviter la déformation de l'image */
+    border-radius: 50%; /* Rend l'image complètement ronde */
+    border: 2px solid #ff4500; /* Ajoute une bordure colorée (optionnel) */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre légère */
     transition: transform 0.2s ease;
 }
 
-img:hover {
-    transform: scale(1.05); /* Effet de zoom au survol */
+.profile-pic:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
 }
