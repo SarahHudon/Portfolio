@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li><a href="experiences.html">Expériences</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="presentation">
+            <h2>Sarah Hudon</h2>
+            <p>Développeuse web passionnée par le design et le code. À la recherche d'une opportunité en télétravail !</p>
+        </section>
+    </div>
+</body>
+</html>
