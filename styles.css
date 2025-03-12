@@ -112,3 +112,14 @@ nav a:hover {
         box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
     }
 }
+img {
+    width: 200px; /* Ajuste la taille selon tes besoins */
+    height: auto;
+    border-radius: 12px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre légère */
+    transition: transform 0.2s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
