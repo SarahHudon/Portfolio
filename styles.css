@@ -74,7 +74,7 @@ nav a:hover {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #ff4500;
+    background-color: #8400ff;
     color: white;
     width: 60px;
     height: 60px;
@@ -93,7 +93,7 @@ nav a:hover {
 
 /* Effet au survol */
 .email-bubble:hover {
-    background-color: #ff0000;
+    background-color: #8400ff;
     transform: scale(1.2);
 }
 
@@ -101,15 +101,15 @@ nav a:hover {
 @keyframes pulse {
     0% {
         transform: scale(1);
-        box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+        box-shadow: 0 0 10px rgba(68, 0, 255, 0.8);
     }
     50% {
         transform: scale(1.1);
-        box-shadow: 0 0 20px rgba(255, 69, 0, 1);
+        box-shadow: 0 0 20px rgb(68, 0, 255, 0.8);
     }
     100% {
         transform: scale(1);
-        box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+        box-shadow: 0 0 10px rgba(68, 0, 255, 0.8);
     }
 }
 .profile-pic {
@@ -117,7 +117,7 @@ nav a:hover {
     height: 80px;
     object-fit: cover; /* Pour éviter la déformation de l'image */
     border-radius: 50%; /* Rend l'image complètement ronde */
-    border: 2px solid #ff4500; /* Ajoute une bordure colorée (optionnel) */
+    border: 2px solid #00ffbf; /* Ajoute une bordure colorée (optionnel) */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre légère */
     transition: transform 0.2s ease;
 }
