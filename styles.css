@@ -73,17 +73,14 @@ nav a:hover {
 /* PRESENTATION */
 /* ===================== */
 .presentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centre verticalement */
-    align-items: center; /* Centre horizontalement */
-    margin-top: 40px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.7); /* Blanc semi-transparent */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour plus de relief */
     text-align: center;
+    backdrop-filter: blur(5px); /* Effet flou subtil sur l'image de fond */
 }
+
 
 .profile-pic {
     width: 150px; /* Ajuste la taille selon ton besoin */
