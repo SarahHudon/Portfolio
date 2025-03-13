@@ -7,19 +7,16 @@
     box-sizing: border-box;
 }
 
-/* ===================== */
-/* CORPS DE LA PAGE */
-/* ===================== */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-color: #ffffff; /* Fond blanc autour */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Pleine hauteur de l'écran */
-    padding: 20px;
+    background-color: #ffffff;
+    background-image: url('assets/pc.png');
+    background-size: contain; /* Ajuste l'image sans déformation */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
 }
+
 
 .container {
     background-image: url('assets/pc.png');
