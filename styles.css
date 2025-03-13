@@ -81,44 +81,45 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* ===================== */
-/* BULLE D'EMAIL */
-/* ===================== */
 .email-bubble {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #8400ff;
+    background-color: #ff0000; /* Rouge vif */
     color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 80px; /* Taille augmentée */
+    height: 80px; /* Taille augmentée */
+    border-radius: 50%; /* Forme ronde */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 40px; /* Taille de l'icône augmentée */
     font-weight: bold;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Ombre plus forte */
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    animation: pulse 1.5s infinite;
-    z-index: 999;
+    animation: pulse 1s ease-in-out infinite; /* Pulsation plus rapide */
+    z-index: 9999;
 }
 
 .email-bubble:hover {
-    background-color: #7200e6;
-    transform: scale(1.2);
+    background-color: #cc0000; /* Rouge un peu plus foncé */
+    transform: scale(1.3); /* Zoom plus marqué au survol */
 }
 
 /* Animation de pulsation */
 @keyframes pulse {
-    0%, 100% {
+    0% {
         transform: scale(1);
-        box-shadow: 0 0 10px rgba(68, 0, 255, 0.8);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
     }
     50% {
         transform: scale(1.1);
-        box-shadow: 0 0 20px rgba(68, 0, 255, 0.8);
+        box-shadow: 0 0 30px rgba(255, 0, 0, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
     }
 }
 
