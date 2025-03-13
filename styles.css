@@ -157,22 +157,23 @@ nav a:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
-h3 {
+.h3-bubble {
     display: block;
     background-color: #ffffff; /* Fond blanc */
-    color: #333; /* Texte en gris foncé */
+    color: #333; /* Texte gris foncé */
     padding: 12px 20px;
-    border-radius: 30px; /* Bords arrondis pour effet "bulle" */
+    border-radius: 30px; /* Bords arrondis */
     font-size: 18px;
     font-weight: 500;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre légère */
     margin-bottom: 15px; /* Espace entre les bulles */
-    text-align: center; /* Centrer le texte */
+    text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Effet subtil au survol */
-h3:hover {
-    transform: scale(1.05); /* Légère augmentation de taille */
+/* Effet au survol */
+.h3-bubble:hover {
+    transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
+
