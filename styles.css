@@ -97,9 +97,6 @@ nav a:hover {
     transition: transform 0.2s ease;
 }
 
-.profile-pic:hover {
-    transform: scale(1.1);
-}
 
 /* ===================== */
 /* BULLES DE TEXTE */
@@ -114,9 +111,6 @@ nav a:hover {
     transition: transform 0.2s ease;
 }
 
-.intro-bubble:hover {
-    transform: scale(1.05);
-}
 
 /* ===================== */
 /* ZONE TRANSPARENTE (COMPÉTENCES) */
@@ -135,21 +129,21 @@ nav a:hover {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #ff0000;
-    color: white;
-    width: 80px;
-    height: 80px;
+    background-color: #ff00ff;
+    color: rgb(65, 43, 100);
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 80px;
     transition: transform 0.2s ease;
     animation: pulse 1s ease-in-out infinite;
 }
 
 .email-bubble:hover {
-    background-color: #cc0000;
+    background-color: #a300cc;
     transform: scale(1.3);
 }
 
