@@ -160,7 +160,7 @@ nav a:hover {
 .h3-bubble {
     display: block;
     background-color: #ffffff; /* Fond blanc */
-    color: #333; /* Texte gris foncé */
+    color: #333; /* Texte gris foncé pour contraste */
     padding: 12px 20px;
     border-radius: 30px; /* Bords arrondis */
     font-size: 18px;
@@ -176,4 +176,3 @@ nav a:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
-
