@@ -1,10 +1,15 @@
-/* styles.css */
+/* ===================== */
+/* RESET DE BASE */
+/* ===================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===================== */
+/* CORPS DE LA PAGE */
+/* ===================== */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -18,6 +23,9 @@ body {
     padding: 20px;
 }
 
+/* ===================== */
+/* HEADER */
+/* ===================== */
 header {
     display: flex;
     justify-content: space-between;
@@ -50,6 +58,9 @@ nav a:hover {
     color: #000;
 }
 
+/* ===================== */
+/* PRESENTATION */
+/* ===================== */
 .presentation {
     margin-top: 40px;
     padding: 20px;
@@ -69,7 +80,10 @@ nav a:hover {
     margin-top: 10px;
     line-height: 1.6;
 }
-/* Style de la bulle d'email (version améliorée) */
+
+/* ===================== */
+/* BULLE D'EMAIL */
+/* ===================== */
 .email-bubble {
     position: fixed;
     bottom: 30px;
@@ -84,95 +98,86 @@ nav a:hover {
     align-items: center;
     font-size: 30px;
     font-weight: bold;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
     animation: pulse 1.5s infinite;
     z-index: 999;
 }
 
-/* Effet au survol */
 .email-bubble:hover {
-    background-color: #8400ff;
+    background-color: #7200e6;
     transform: scale(1.2);
 }
 
 /* Animation de pulsation */
 @keyframes pulse {
-    0% {
+    0%, 100% {
         transform: scale(1);
         box-shadow: 0 0 10px rgba(68, 0, 255, 0.8);
     }
     50% {
         transform: scale(1.1);
-        box-shadow: 0 0 20px rgb(68, 0, 255, 0.8);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 10px rgba(68, 0, 255, 0.8);
+        box-shadow: 0 0 20px rgba(68, 0, 255, 0.8);
     }
 }
+
+/* ===================== */
+/* IMAGE DE PROFIL */
+/* ===================== */
 .profile-pic {
-    width: 200px; /* Taille de l'image (ajuste si besoin) */
+    width: 200px;
     height: 200px;
-    object-fit: cover; /* Pour éviter la déformation de l'image */
-    border-radius: 50%; /* Rend l'image complètement ronde */
-    border: 2px solid #00ffbf; /* Ajoute une bordure colorée (optionnel) */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre légère */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #00ffbf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
 }
 
 .profile-pic:hover {
-    transform: scale(1.1); /* Effet de zoom au survol */
+    transform: scale(1.1);
 }
-/* Animation de bulle flottante */
+
+/* ===================== */
+/* BULLES ORANGES */
+/* ===================== */
 .bubble {
     display: inline-block;
-    background-color: #ff6347; /* Couleur de fond */
+    background-color: #ff6347;
     color: white;
     padding: 10px 20px;
     border-radius: 30px;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 15px;
-    animation: float 2s ease-in-out infinite;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-/* Effet au survol */
 .bubble:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+/* ===================== */
+/* BULLES BLANCHES (h3) */
+/* ===================== */
 .h3-bubble {
     display: block;
-    background-color: #ffffff; /* Fond blanc */
-    color: #333; /* Texte gris foncé pour contraste */
+    background-color: #ffffff;
+    color: #333;
     padding: 12px 20px;
-    border-radius: 30px; /* Bords arrondis */
+    border-radius: 30px;
     font-size: 18px;
     font-weight: 500;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre légère */
-    margin-bottom: 15px; /* Espace entre les bulles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Effet au survol */
 .h3-bubble:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
