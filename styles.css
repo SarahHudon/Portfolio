@@ -13,15 +13,26 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-image: url('assets/pc.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background-color: #ffffff; /* Fond blanc autour */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Pleine hauteur de l'écran */
+    padding: 20px;
 }
 
 .container {
-    padding: 20px;
+    background-image: url('assets/pc.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px; /* Coins arrondis */
+    width: 100%; /* Pleine largeur */
+    max-width: 1200px; /* Taille max pour éviter qu’elle devienne trop grande */
+    height: 90vh; /* Hauteur à 90% de la hauteur de l'écran */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Ombre douce */
 }
+
 
 /* ===================== */
 /* HEADER */
@@ -62,11 +73,31 @@ nav a:hover {
 /* PRESENTATION */
 /* ===================== */
 .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
     margin-top: 40px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px; /* Ajuste la taille selon ton besoin */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Rendre la photo ronde */
+    border: 3px solid #ff6347; /* Bordure colorée (ajuste la couleur si besoin) */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px; /* Espace sous la photo */
+    transition: transform 0.2s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Légère augmentation au survol */
 }
 
 .presentation h2 {
