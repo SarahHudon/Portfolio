@@ -87,13 +87,13 @@ nav a:hover {
     right: 30px;
     background-color: #ff0000; /* Rouge vif */
     color: white;
-    width: 80px; /* Taille augmentée */
-    height: 80px; /* Taille augmentée */
+    width: 160px; /* Taille augmentée */
+    height: 160px; /* Taille augmentée */
     border-radius: 50%; /* Forme ronde */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px; /* Taille de l'icône augmentée */
+    font-size: 80px; /* Taille de l'icône augmentée */
     font-weight: bold;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Ombre plus forte */
     text-decoration: none;
