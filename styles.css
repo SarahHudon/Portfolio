@@ -157,3 +157,22 @@ nav a:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
+h3 {
+    display: block;
+    background-color: #ffffff; /* Fond blanc */
+    color: #333; /* Texte en gris foncé */
+    padding: 12px 20px;
+    border-radius: 30px; /* Bords arrondis pour effet "bulle" */
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre légère */
+    margin-bottom: 15px; /* Espace entre les bulles */
+    text-align: center; /* Centrer le texte */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effet subtil au survol */
+h3:hover {
+    transform: scale(1.05); /* Légère augmentation de taille */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
