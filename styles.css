@@ -91,7 +91,7 @@ nav a:hover {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 20px solid #00ff6a50;
+    border: 12px solid #00ff6a50;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     transition: transform 0.2s ease;
