@@ -24,12 +24,12 @@ body {
 /* CONTAINER */
 /* ===================== */
 .container {
-    width: 100%; 
+    width: 100%;
     max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6); /* Transparence légère */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
@@ -76,35 +76,70 @@ nav a:hover {
     text-align: center;
     padding: 30px;
 }
-
 /* ===================== */
-/* PHOTO + ALIGNEMENT */
+/* BULLE EMAIL */
 /* ===================== */
-.profile-section {
+.email-bubble {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff0000;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centre verticalement */
-    gap: 20px; /* Espacement entre la photo et les bulles */
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: pulse 1.5s infinite;
+    z-index: 9999; /* Reste au-dessus du reste */
 }
 
-/* IMAGE DE PROFIL */
+.email-bubble:hover {
+    background-color: #cc0000;
+    transform: scale(1.2);
+}
+
+/* Animation de pulsation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 30px rgba(255, 0, 0, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    }
+}
+
+/* PHOTO + ALIGNEMENT */
+.profile-section {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    margin-bottom: 20px;
+}
+
 .profile-pic {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #00ffbf;
+    border: 3px solid #8c00ff6c;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
 }
 
-.profile-pic:hover {
-    transform: scale(1.1);
-}
 
-/* ===================== */
 /* BULLES DE TEXTE */
-/* ===================== */
 .intro-bubble {
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.9);
@@ -113,22 +148,24 @@ nav a:hover {
     border-radius: 30px;
     margin-bottom: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    max-width: 600px;
     text-align: left;
-    max-width: 600px; /* Largeur max pour éviter l'étirement */
+    transition: transform 0.2s ease;
 }
 
-.intro-bubble:hover {
-    transform: scale(1.05);
+
+
+/* ZONE DE COMPÉTENCES */
+.skills-box {
+    background-color: rgba(255, 255, 255, 0.4); /* Transparence douce */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-/* LISTES DANS LES BULLES */
-.intro-bubble ul {
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-.intro-bubble li {
+/* LISTE */
+.skills-box li {
     font-size: 16px;
     color: #555;
     margin-bottom: 5px;
@@ -156,6 +193,6 @@ nav a:hover {
     }
 
     .intro-bubble {
-        max-width: 100%; /* Ajustement automatique en responsive */
+        max-width: 100%; /* Adaptation auto sur petit écran */
     }
 }
