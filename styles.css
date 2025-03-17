@@ -74,21 +74,20 @@ nav a:hover {
 /* ===================== */
 .experiences-container {
     display: flex;
+    flex-direction: column; /* Alignement en colonne */
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+    gap: 15px; /* Espace entre les cartes */
 }
 
 .experience-card {
+    width: 80%; /* Ajuste la taille */
     background-color: #ffffff;
     border: 2px solid #e0e0e0;
     box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
     padding: 15px;
     font-size: 14px;
     text-align: center;
-    width: auto; /* S'ajuste automatiquement au contenu */
-    max-width: 300px;
     border-radius: 8px;
 }
 
@@ -103,7 +102,7 @@ nav a:hover {
 }
 
 .formation-card {
-    width: 80%;
+    width: 70%; /* Ajuste la largeur pour centrer */
     padding: 15px;
     background-color: #f4f4f4;
     border: 1px solid #ddd;
@@ -133,19 +132,86 @@ nav a:hover {
         font-size: 16px;
     }
 }
+/* ===================== */
+/* SECTION PROFIL */
+/* ===================== */
 .profile-section {
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 20px; /* Espace entre la photo et le texte */
     margin-bottom: 20px;
 }
 
 .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 0; /* Supprime l'arrondi */
-    box-shadow: none; /* Retire l'ombre */
+    border-radius: 50%; /* Si tu veux une forme carrée, enlève ça */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.profile-text {
+    max-width: 600px; /* Limite la largeur du texte */
+    text-align: left;
+}
+
+/* ===================== */
+/* TEXTE DE PRÉSENTATION */
+/* ===================== */
+.presentation {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.presentation p {
+    margin-bottom: 10px;
+}
+
+/* ===================== */
+/* LISTE DE COMPÉTENCES */
+/* ===================== */
+.skills-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-box li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills-box {
+        width: 90%;
+    }
+}
+
 .email-bubble {
     position: fixed;
     bottom: 30px;
