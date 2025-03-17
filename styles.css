@@ -133,3 +133,16 @@ nav a:hover {
         font-size: 16px;
     }
 }
+.profile-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%; /* Retire si tu ne veux pas de cercle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
