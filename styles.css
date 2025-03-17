@@ -142,7 +142,7 @@ nav a:hover {
 .profile-pic {
     width: 150px;
     height: 150px;
-    object-fit: contain;
-    border-radius: 50%; /* Retire si tu ne veux pas de cercle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    border-radius: 0; /* Supprime l'arrondi */
+    box-shadow: none; /* Retire l'ombre */
 }
