@@ -81,7 +81,7 @@ nav a:hover {
 }
 
 .experience-card {
-    width: 80%; /* Ajuste la taille */
+    width: fit-content; /* Ajuste la taille */
     background-color: #ffffff;
     border: 2px solid #e0e0e0;
     box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
@@ -89,6 +89,7 @@ nav a:hover {
     font-size: 14px;
     text-align: center;
     border-radius: 8px;
+    margin; auto;
 }
 
 /* ===================== */
@@ -102,27 +103,28 @@ nav a:hover {
 }
 
 .formation-card {
-    width: 70%; /* Ajuste la largeur pour centrer */
+    width: fit-content; /* Ajuste la largeur pour centrer */
     padding: 15px;
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     text-align: center;
+    margin; auto;
 }
 
 /* ===================== */
 /* RESPONSIVE */
 /* ===================== */
 @media (max-width: 768px) {
-    .experience-card {
-        font-size: 12px;
-        max-width: 100%; /* S'ajuste à l'écran */
-    }
-
+    .experience-card,
     .formation-card {
-        width: 100%;
+        width: auto; /* Laisse la taille s'adapter au texte */
+        max-width: 90%; /* Évite que ça dépasse l'écran */
     }
+}
+
+
 
     header h1 {
         font-size: 20px;
