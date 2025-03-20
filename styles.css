@@ -19,6 +19,20 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/pc.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    z-index: -1;
+}
 
 /* ===================== */
 /* CONTAINER */
@@ -146,8 +160,8 @@ nav a:hover {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%; /* Si tu veux une forme carrée, enlève ça */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -162,10 +176,12 @@ nav a:hover {
 /* TEXTE DE PRÉSENTATION */
 /* ===================== */
 .presentation {
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
 }
+
 
 .presentation p {
     margin-bottom: 10px;
@@ -187,9 +203,20 @@ nav a:hover {
 
 .skills-box li {
     font-size: 16px;
-    color: #555;
-    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+.skills-box li::before {
+    content: '✔';
+    color: #4CAF50;
+}
+
 
 /* ===================== */
 /* RESPONSIVE */
