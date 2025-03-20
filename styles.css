@@ -69,6 +69,10 @@ nav a {
 nav a:hover {
     color: #000;
 }
+.element {
+    margin: 20px; /* espace externe de 20px autour de l'élément */
+    padding: 10px; /* espace interne de 10px à l'intérieur de l'élément */
+}
 
 /* ===================== */
 /* EXPÉRIENCES */
