@@ -70,10 +70,6 @@ nav a {
 nav a:hover {
     color: #000;
 }
-.element {
-    margin: 20px; /* espace externe de 20px autour de l'élément */
-    padding: 10px; /* espace interne de 10px à l'intérieur de l'élément */
-}
 
 /* ===================== */
 /* EXPÉRIENCES */
@@ -86,17 +82,7 @@ nav a:hover {
     gap: 15px; /* Espace entre les cartes */
 }
 
-.experience-card {
-    width: fit-content; /* Ajuste la taille */
-    background-color: #ffffff;
-    border: 2px solid #e0e0e0;
-    box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
-    padding: 15px;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 8px;
-    margin: auto;
-}
+
 
 /* ===================== */
 /* FORMATIONS */
@@ -108,7 +94,9 @@ nav a:hover {
     gap: 15px;
 }
 
-.formation-card {
+.formation-card,
+.experience-card,
+.card {
     width: fit-content; /* Ajuste la largeur pour centrer */
     padding: 15px;
     background-color: #f4f4f4;
@@ -130,7 +118,9 @@ nav a:hover {
     }
 }
 
-
+header {
+    margin: 30px auto;
+}
 
     header h1 {
         font-size: 20px;
@@ -221,21 +211,23 @@ nav a:hover {
     .profile-section {
         flex-direction: column;
         gap: 10px;
+        padding: 10px;
     }
 
-    .profile-text {
-        text-align: center;
+    .skills-box, .intro-bubble, .card {
+        width: 100%; /* Prend toute la largeur */
+        font-size: 16px;
     }
 
-    .profile-pic {
-        width: 120px;
-        height: 120px;
+    header h1 {
+        font-size: 18px;
     }
-
-    .skills-box {
-        width: 90%;
+    
+    nav a {
+        font-size: 14px;
     }
 }
+
 
 .email-bubble {
     position: fixed;
@@ -289,4 +281,11 @@ nav a:hover {
 .project-bubble:hover {
     background-color: #e0e0e0;
     color: #000;
+}
+.intro-bubble {
+    background-color: rgba(255, 255, 255, 0.8); /* Même transparence partout */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
