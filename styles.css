@@ -58,19 +58,25 @@ header h1 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Écarte les liens du menu */
+    gap: 20px; /* Écarte les liens du menu */
+    justify-content: center;
     padding: 0;
 }
 
 nav a {
+    display: inline-block; /* Pour permettre le moulage */
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Même transparence que les bulles */
+    border-radius: 12px; /* Bordures arrondies */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    color: #333;
     text-decoration: none;
-    color: #666;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
+    background-color: rgba(255, 255, 255, 1); /* Léger changement au survol */
     color: #000;
 }
 
