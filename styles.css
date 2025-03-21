@@ -39,14 +39,15 @@ body {
 /* ===================== */
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding: 30px; /* Marge intérieure égale de tous les côtés */
     background: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin: 50px; /* Marge extérieure égale sur tous les côtés */
 }
+
 
 header h1 {
     font-size: 24px;
