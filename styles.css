@@ -50,7 +50,7 @@ header {
 
 
 header h1 {
-    margin-right: 30px; /* Espacement entre le titre et la nav */
+    margin-right: 60px; /* Espacement entre le titre et la nav */
     font-size: 24px;
     color: #555;
 }
@@ -58,7 +58,7 @@ header h1 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 70px;
 }
 
 nav a {
