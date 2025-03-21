@@ -20,7 +20,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 /* ===================== */
 /* CONTAINER */
 /* ===================== */
@@ -30,7 +29,7 @@ body {
     margin: 30px auto;
     padding: 20px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Transparence légère */
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,36 +38,33 @@ body {
 /* ===================== */
 header {
     display: flex;
-    justify-content: space-between; /* Espace entre le titre et le menu */
-    align-items: center; /* Centre verticalement */
-    padding: 20px 40px; /* Ajuste les marges internes */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Centre le header */
-    max-width: 1100px; /* Ajuste la largeur maximale */
+    margin: 20px auto;
+    max-width: 1100px;
 }
 
 header h1 {
     font-size: 24px;
     color: #555;
-    margin: 0; /* Évite les marges supplémentaires */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Écarte les liens du menu */
-    justify-content: center;
-    padding: 0;
+    gap: 20px;
 }
 
 nav a {
-    display: inline-block; /* Pour permettre le moulage */
+    display: inline-block;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Même transparence que les bulles */
-    border-radius: 12px; /* Bordures arrondies */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #333;
     text-decoration: none;
     font-size: 16px;
@@ -76,69 +72,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 1); /* Léger changement au survol */
+    background-color: rgba(255, 255, 255, 1);
     color: #000;
 }
-
-
-/* ===================== */
-/* EXPÉRIENCES */
-/* ===================== */
-.experiences-container {
-    display: flex;
-    flex-direction: column; /* Alignement en colonne */
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Espace entre les cartes */
-}
-
-
-
-/* ===================== */
-/* FORMATIONS */
-/* ===================== */
-.formations-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.formation-card,
-.experience-card,
-.card {
-    width: fit-content; /* Ajuste la largeur pour centrer */
-    padding: 15px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    margin: auto;
-}
-
-/* ===================== */
-/* RESPONSIVE */
-/* ===================== */
-@media (max-width: 768px) {
-    .experience-card,
-    .formation-card {
-        width: auto; /* Laisse la taille s'adapter au texte */
-        max-width: 90%; /* Évite que ça dépasse l'écran */
-    }
-}
-
-header {
-    margin: 30px auto;
-}
-
-    header h1 {
-        font-size: 20px;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
 
 /* ===================== */
 /* SECTION PROFIL */
@@ -147,58 +83,41 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centre le tout verticalement */
+    justify-content: center;
     text-align: center;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    gap: 15px; /* Ajoute un espace uniforme entre les éléments */
+    gap: 15px;
 }
+
 .profile-name {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
 }
-.intro-bubble {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.9); /* Légèrement moins transparent pour mieux ressortir */
-    padding: 12px 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px; /* Évite trop d'espacement vertical */
-    text-align: center;
-    max-width: 80%; /* Adapte mieux au texte */
-}
-
 
 .profile-pic {
-    margin-bottom: 10px;
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border-radius: 50%; /* Si tu veux une forme carrée, enlève ça */
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.profile-text {
-    text-align: center; /* Centre le texte */
-    max-width: 600px;
-}
-
 /* ===================== */
-/* TEXTE DE PRÉSENTATION */
+/* INTRODUCTION BUBBLE */
 /* ===================== */
-.presentation {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #333;
-    line-height: 1.8;
-}
-
-
-.presentation p {
-    margin-bottom: 10px;
+.intro-bubble {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 12px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    text-align: center;
+    max-width: 80%;
 }
 
 /* ===================== */
@@ -226,38 +145,42 @@ header {
     align-items: center;
     gap: 10px;
 }
+
 .skills-box li::before {
     content: '✔';
     color: #4CAF50;
 }
 
-
 /* ===================== */
-/* RESPONSIVE */
+/* SECTION PROJETS */
 /* ===================== */
-@media (max-width: 768px) {
-    .profile-section {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .skills-box, .intro-bubble, .card {
-        width: 100%; /* Prend toute la largeur */
-        font-size: 16px;
-    }
-
-    header h1 {
-        font-size: 18px;
-    }
-    
-    nav a {
-        font-size: 14px;
-    }
+.projects-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
+.project-bubble {
+    padding: 15px 30px;
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
 
+.project-bubble:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
 
+/* ===================== */
+/* EMAIL BUBBLE */
+/* ===================== */
 .email-bubble {
     position: fixed;
     bottom: 30px;
@@ -288,33 +211,47 @@ header {
         box-shadow: 0 0 30px rgba(255, 0, 0, 1);
     }
 }
-.projects-section {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-.project-bubble {
-    padding: 15px 30px;
-    background-color: #f4f4f4;
-    border: 2px solid #ddd;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
+/* ===================== */
+/* RESPONSIVE POUR MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
 
-.project-bubble:hover {
-    background-color: #e0e0e0;
-    color: #000;
-}
-.intro-bubble {
-    background-color: rgba(255, 255, 255, 0.8); /* Même transparence partout */
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 22px;
+    }
+
+    .intro-bubble, .skills-box, .project-bubble {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }
