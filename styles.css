@@ -14,7 +14,7 @@ body {
     font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #ffffff;
-    background-image: url('assets/pc.png'); /* Rétablissement du fond */
+    background-image: url('assets/pc.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 15px 30px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -159,6 +159,7 @@ nav a:hover {
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur mobile */
 }
 
 .project-bubble {
@@ -216,12 +217,6 @@ nav a:hover {
 /* RESPONSIVE POUR MOBILE */
 /* ===================== */
 @media (max-width: 768px) {
-    .profile-section {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    }
-
     .profile-pic {
         width: 100px;
         height: 100px;
