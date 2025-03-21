@@ -39,38 +39,41 @@ body {
 /* ===================== */
 header {
     display: flex;
-    justify-content: center; /* Centre horizontalement */
+    justify-content: space-between; /* Espace entre le titre et le menu */
     align-items: center; /* Centre verticalement */
-    padding: 30px; /* Marge intérieure égale de tous les côtés */
+    padding: 20px 40px; /* Ajuste les marges internes */
     background: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 50px; /* Marge extérieure égale sur tous les côtés */
+    margin: 20px auto; /* Centre le header */
+    max-width: 1100px; /* Ajuste la largeur maximale */
 }
 
-
 header h1 {
-    margin-right: 60px; /* Espacement entre le titre et la nav */
     font-size: 24px;
     color: #555;
+    margin: 0; /* Évite les marges supplémentaires */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 70px;
+    gap: 30px; /* Écarte les liens du menu */
+    padding: 0;
 }
 
 nav a {
     text-decoration: none;
     color: #666;
     font-size: 18px;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #000;
 }
+
 
 /* ===================== */
 /* EXPÉRIENCES */
