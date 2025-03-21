@@ -266,3 +266,26 @@ nav a:hover {
         box-shadow: 0 0 30px rgba(255, 0, 0, 1);
     }
 }
+.projects-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-bubble {
+    padding: 15px 30px;
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.project-bubble:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
