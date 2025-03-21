@@ -208,6 +208,13 @@ nav a:hover {
     z-index: 9999;
 }
 
+.contact-mail {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    overflow-wrap: break-word; /* Coupe le mail si nécessaire */
+}
+
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -254,5 +261,13 @@ nav a:hover {
     nav a {
         font-size: 14px;
         padding: 8px 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments du menu de passer à la ligne si nécessaire */
+        justify-content: center; /* Centre le menu horizontalement */
+        overflow: hidden; /* Évite que le menu déborde de l’écran */
+        width: 100%; /* Prend toute la largeur disponible */
     }
 }
